@@ -6,7 +6,7 @@ describe('Test add function', () => {
         const total = add(4, 5);
         // if (total !== 9) throw new Error('Wrong');
         // assert(total === 10);
-        assert.equal(total, 10);
+        assert.equal(total, 9);
     });
 
     it('Can add float point number', () => {
