@@ -8,4 +8,12 @@ describe('Test add function', () => {
             done();
         });
     });
+
+    it('Cannot add something NaN', (done) => {
+        addAsync('4', 5, (err, kq) => {
+            assert.equal(err.message, 'Type error');
+            assert.equal(kq, undefined);
+            done();
+        });
+    });
 });
