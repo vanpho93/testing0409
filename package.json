@@ -1,0 +1,23 @@
+{
+  "name": "testing0409",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --exec 'mocha'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanpho93/testing0409.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanpho93/testing0409/issues"
+  },
+  "homepage": "https://github.com/vanpho93/testing0409#readme",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
