@@ -1,7 +1,7 @@
 const assert = require('assert');
 const Product = require('../../src/db');
 
-describe('Test remove new product', () => {
+describe('Test update new product', () => {
     let productId;
 
     beforeEach('Create 1 product for test', async() => {
@@ -10,9 +10,9 @@ describe('Test remove new product', () => {
         await pr.save();
     });
 
-    it('Can remove product by id', async () => {
-        await Product.findByIdAndRemove(productId);
-        const prCount = await Product.count();
-        assert.equal(prCount, 0);
+    it('Can update product by id', async () => {
+        await Product.findByIdAndUpdate(productId, { name: 'efgh' });
+        const pr2 = await Product.findById(productId);
+        assert.equal(pr2.name, 'efgh');
     });
 });
